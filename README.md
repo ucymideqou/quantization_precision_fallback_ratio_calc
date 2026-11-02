@@ -1,11 +1,11 @@
-# safeval_jd381
+# quantization_precision_fallback_ratio_calc
 
 **算出模型安全评测负责人·量化位宽与精度回退里各项的占比与比值。**
 
-`safeval_jd381` —— 从输入中抽取数值，计算模型安全评测负责人·量化位宽与精度回退相关的比值与占比，分母为零时明确报错
+`quantization_precision_fallback_ratio_calc` —— 从输入中抽取数值，计算模型安全评测负责人·量化位宽与精度回退相关的比值与占比，分母为零时明确报错
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`safeval_jd381.py` 拷走就能用
+- 单文件，`quantization_precision_fallback_ratio_calc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install ucymideqou-safeval_jd381
+pip install ucymideqou-quantization_precision_fallback_ratio_calc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-safeval_jd381 --help
+quantization_precision_fallback_ratio_calc --help
 ```
 
-也可以不用安装，直接把 `safeval_jd381.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `quantization_precision_fallback_ratio_calc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ safeval_jd381 --help
 ## 用法
 
 ```bash
-python safeval_jd381.py --file input.txt
-python safeval_jd381.py --text "示例内容"
-python safeval_jd381.py --file input.txt --json
+python quantization_precision_fallback_ratio_calc.py --file input.txt
+python quantization_precision_fallback_ratio_calc.py --text "示例内容"
+python quantization_precision_fallback_ratio_calc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python safeval_jd381.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_safeval_jd381.py
+python test_quantization_precision_fallback_ratio_calc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_safeval_jd381.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/ucymideqou/safeval_jd381>
+- GitHub 仓库：<https://github.com/ucymideqou/quantization_precision_fallback_ratio_calc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_safeval_jd381.py
 ucymideqou 做模型安全评测负责人·量化位宽与精度回退相关的问题，方向对标百度的负责人模型安全评测负责人岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://ucymideqou.github.io>
-- 仓库：<https://github.com/ucymideqou/safeval_jd381>
+- 仓库：<https://github.com/ucymideqou/quantization_precision_fallback_ratio_calc>
 
 ## 许可
 

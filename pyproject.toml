@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ucymideqou-safeval_jd381"
+name = "ucymideqou-quantization_precision_fallback_ratio_calc"
 version = "0.1.0"
 description = "从输入中抽取数值，计算模型安全评测负责人·量化位宽与精度回退相关的比值与占比，分母为零时明确报错"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://ucymideqou.github.io"
-Repository = "https://github.com/ucymideqou/safeval_jd381"
-Issues = "https://github.com/ucymideqou/safeval_jd381/issues"
+Repository = "https://github.com/ucymideqou/quantization_precision_fallback_ratio_calc"
+Issues = "https://github.com/ucymideqou/quantization_precision_fallback_ratio_calc/issues"
 
 [project.scripts]
-safeval_jd381 = "safeval_jd381:main"
+quantization_precision_fallback_ratio_calc = "quantization_precision_fallback_ratio_calc:main"
 
 [tool.setuptools]
-py-modules = ["safeval_jd381"]
+py-modules = ["quantization_precision_fallback_ratio_calc"]
